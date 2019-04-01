@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+/*/* signup css */
+#signup,#login{
+	min-height:100vh;
+	background-color:rgb(0,10,20);
+} 
+.signup_form_div{
+	width:600px;
+	height:100;
+	color:#F0ECF7;
+	background-color: rgba(206,198,222,0.3); 
+	border-radius:3px;
+}
+.signup_form_title, .login_form_title{
+	color:#F0ECF7;
+	font-size:2vw;
+  	font-family:'Pacifico', cursive ;
+}
+
+
+/* login css */
+.check {
+	color:red;
+}
+.error{
+	font-family: tahoma;
+	color:red;
+}
+
+.login_form_div{
+	width:600px;
+	height:400px;
+	color:#F0ECF7;
+	background-color: rgba(206,198,222,0.3); 
+	border-radius:3px;
+}

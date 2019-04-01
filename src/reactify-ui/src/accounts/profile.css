@@ -1,0 +1,26 @@
+/*#profile_div{
+	min-height:100vh;
+	background-color:#18151E;
+}*/
+.profil,.white{
+	color:#F0ECF7;
+}
+.part_div{
+	background:#99A3A4;
+	border-radius:5px;
+	color:#F0ECF7;
+	opacity: 0.67;
+}
+#pro{
+	font-family: cursive;
+}	
+.well_part
+{
+	color:#F0ECF7;
+}
+.profil_dark{
+	color:#302A3B;
+}
+.profil_bold{
+	font-family: bold;
+}

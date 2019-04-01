@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,6 +29,12 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yantragene2k19@gmail.com'
+EMAIL_HOST_PASSWORD = 'yantragene2019@'
+EMAIL_PORT = 587
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -40,9 +46,16 @@ INSTALLED_APPS = [
 
     'corsheaders',
     'rest_framework',
+    # 'rest_framework.authtoken',
 
-    'posts',
+    'accounts',
+    'event',
+    'extra',
+    'gallery',
+
 ]
+
+AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,6 +142,10 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static-cdn-local')
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
+
 
 CORS_URLS_REGEX = r'^/api.*'
 CORS_ORIGIN_ALLOW_ALL = True
@@ -140,8 +157,17 @@ CORS_ORIGIN_WHITELIST = (
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    )
+        #'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+
+
+    ),
+
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        #'rest_framework.authentication.JWTAuthentication',  # <-- And here
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    ],
 }
 
 

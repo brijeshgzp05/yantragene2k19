@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,17 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     {% include 'css.html' %}
-    <title>Reactify Django</title>
+    <title>Yantragene 2k19</title>
+
+    <link rel="icon" type="image/png" href="{% static 'img/icon.ico' %}"/>
+    
   </head>
   <body>
-    <div class='container-fluid'>
-        {% include 'navbar.html' %}
+    
+    
+
 
         {% block content %}
             
         {% endblock content %}
 
-    </div>  
+     
 
 
     {% include 'js.html' %}

@@ -1,0 +1,54 @@
+.shadow
+{
+	position:relative;
+	margin: 200px auto 0;
+	width:120px;
+	height:80px;
+	border-radius:50%;
+	/*background: linear-gradient(0deg,#4679BD,#4679BD)*/;
+}
+
+.shadow:before,
+.shadow:after
+
+{
+
+
+	content:'';
+	position:absolute;
+	top:-2px;
+	left:-2px;
+	background-image: linear-gradient(90deg, #00FF7F,#3CB371);
+	background-size:400%;
+	width: calc(100% + 4px);
+	height:calc(100% + 4px);
+	z-index:-1;
+	border-radius: 50%;
+	animation: animate 20s linear infinite;
+
+}
+
+.shadow:after
+{
+	filter: blur(7px);
+}
+
+@keyframes animate
+{
+
+
+	0%{
+		background-position: 0 0;
+	}
+
+	50%{
+		background-position: 200% 0;
+	}
+	100%{
+		background-position: 0% 0;
+	}
+}
+.homeh1{
+	color:white;
+	padding-top:14%;
+}

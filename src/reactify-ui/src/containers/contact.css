@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+/*#contact{
+  min-height:100vh;
+  background-color:#18151E;
+
+}  */
+.clear{
+	margin-left:10px;
+}
+.contactus{
+  color:#F0ECF7;
+  border-radius: 3px solid rgba(192,239,244,0.3);
+}
+.awesome {
+  font-size:50px;
+  font-weight: bold;
+  color:#F0ECF7;
+  font-family:'Pacifico', cursive ;
+}
+

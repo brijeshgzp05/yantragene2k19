@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Griffy');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+.center-content {
+  max-width: 70%;
+  margin: auto;
+  text-align: left;
+  font-family: 'Shadows Into Light';
+ 
+}
+.heading{
+  font-weight: bold;
+}
+.icon-position{
+  position: relative;
+  text-align: center;
+}
+.icon11{
+margin: 0;
+padding: 0;
+}
+.icon11 li{
+list-style: none;
+margin: 10px;
+display: inline-block;
+}
+.icon11 li .fa{
+font-size: 20px;
+color: #262626;
+line-height: 40px;
+transition: .5s;
+}
+.icon11 li a{
+position: relative;
+display: block;
+width: 40px;
+height: 40px;
+background-color: #fff;
+text-align: center;
+transform:translate(0,0);
+transition: .5s;
+box-shadow: -2px 2px 1px rgb(0, 0, 0, 0.5);
+border-radius: 5px;
+}
+.icon11 li a::before{
+content: "";
+background: #b1b1b1;
+transition: .5s;
+transform: rotate(0deg);
+}
+.icon11 li a::after{
+content: "";
+background: #b1b1b1;
+transition: .5s;
+transform: scale(1.25);
+}
+.icon11 li a:hover{
+transform: scale(1.25);
+box-shadow: -5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+.icon11 li:hover .fa{
+color: #fff;
+}
+.icon11 li a:hover{
+transform:scale(1.25);
+box-shadow: -5px 5px 5px rgb(0, 0, 0, 0.5);
+}
+.icon11 li:hover:nth-child(1) a{
+background: #3b5999;
+}
+
+.icon11 li:hover:nth-child(1) a:before{
+background: #2e4a86;
+}
+.icon11 li:hover:nth-child(1) a:after{
+background: #4a69ad;
+}
+.icon11 li:hover:nth-child(5) a{
+background: #55acee;
+}
+.icon11 li:hover:nth-child(5) a:before{
+background: #4184b7;
+}
+.icon11 li:hover:nth-child(5) a:after{
+background: #4d9fde;
+}
+.icon11 li:hover:nth-child(3) a{
+background: #dd4b39;
+}
+
+.icon11 li:hover:nth-child(3) a:before{
+background: #c13929;
+}
+.icon11 li:hover:nth-child(3) a:after{
+background: #e83322;
+}
+
+.icon11 li:hover:nth-child(4) a{
+background: #0077B5;
+}
+
+.icon11 li:hover:nth-child(4) a:before{
+background: #036aa0;
+}
+.icon11 li:hover:nth-child(4) a:after{
+background: #0d82bf;
+}
+
+.icon11 li:hover:nth-child(2) a{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.icon11 li:hover:nth-child(2) a:before{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+.icon11 li:hover:nth-child(2) a:after{
+background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+.allabout{
+	color: white;
+	min-height:100vh;
+	background-color: rgb(0,10,20);
+}
+
+
+#about_btn{
+	float: right;
+	position:absolute;
+	top:110px;
+	margin-left: 40px;
+
+}
+.btn-dark{
+	color: #ffffff;
+	border-color: rgb(41, 41, 41);
+	background-color: rgb(41, 41, 41);	
+}
+.btn-dark:hover{
+	border-color: rgb(57, 57, 57);
+	background-color: rgb(57, 57, 57);
+}
+.btn-outline-dark{
+	color: #ffffff;
+	border-color: rgb(41, 41, 41);
+	background-color: rgba(41, 41, 41, 0.1);
+}
+.btn-outline-dark:hover{
+	border-color: rgb(57, 57, 57);
+	background-color: rgba(57, 57, 57, 1);
+}
