@@ -21,15 +21,15 @@ class RegistrationForm extends Component {
 
   createAccount (data) {
     const endpoint = '/api/accounts/register/'
-    const csrfToken = cookie.load('csrftoken')
+    //const csrfToken = cookie.load('csrftoken')
     const myerrorblock = document.getElementById("errorblock")
     let thisComp = this
-    if (csrfToken !== undefined) {
+    //if (csrfToken !== undefined) {
       let lookupOptions = {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-CSRFToken': csrfToken
+          
         },
         body: JSON.stringify(data),
         credentials: 'include'
@@ -59,7 +59,7 @@ class RegistrationForm extends Component {
             doneloading:false
           })
         })
-    }
+    //}
   }
 
   handleSubmit = (e) => {
@@ -209,3 +209,9 @@ const WrappedRegistrationForm = Form.create({ name: 'register' })(RegistrationFo
 
 
 export default WrappedRegistrationForm;
+
+
+
+
+
+// 'X-CSRFToken': csrfToken

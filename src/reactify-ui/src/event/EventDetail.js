@@ -50,44 +50,44 @@ class EventRegistrationForm extends React.Component {
 
   createEvent (data) {
     const endpoint = '/api/event/participant/create/'
-    const csrfToken = cookie.load('csrftoken')
+    // const csrfToken = cookie.load('csrftoken')
     const token = localStorage.getItem('token')
     let thisComp = this
-    if (csrfToken !== undefined) {
-      let lookupOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'JWT ' + token,
-          'X-CSRFToken': csrfToken
-        },
-        body: JSON.stringify(data),
-        credentials: 'include'
+    // if (csrfToken !== undefined) {
+    let lookupOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'JWT ' + token
 
-      }
-      fetch(endpoint, lookupOptions)
-        .then(function (response) {
-          if (response.status !== 400) {
-            alert('You have successfully registered')
-          }
-          return response.json()
-        }).then(function (responseData) {
-          console.log(responseData)
-          document.getElementById('errorblock').innerHTML = responseData.non_field_errors[0]
-          thisComp.setState({
-            doneloading: false,
-            team_name: '',
-            other_mambers: ''
-          })
-        }).catch(function (error) {
-          console.log('error', error)
-          thisComp.setState({
-            doneloading: false,
-            team_name: '',
-            other_mambers: ''
-          })
-        })
+      },
+      body: JSON.stringify(data),
+      credentials: 'include'
+
     }
+    fetch(endpoint, lookupOptions)
+      .then(function (response) {
+        if (response.status !== 400) {
+          alert('You have successfully registered')
+        }
+        return response.json()
+      }).then(function (responseData) {
+        console.log(responseData)
+        document.getElementById('errorblock').innerHTML = responseData.non_field_errors[0]
+        thisComp.setState({
+          doneloading: false,
+          team_name: '',
+          other_mambers: ''
+        })
+      }).catch(function (error) {
+        console.log('error', error)
+        thisComp.setState({
+          doneloading: false,
+          team_name: '',
+          other_mambers: ''
+        })
+      })
+    // }
   }
 
   eventDesc (event) {
@@ -313,3 +313,5 @@ class EventRegistrationForm extends React.Component {
 }
 
 export default EventRegistrationForm
+
+// 'X-CSRFToken': csrfToken

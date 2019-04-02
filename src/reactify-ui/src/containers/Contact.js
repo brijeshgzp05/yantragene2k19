@@ -19,37 +19,37 @@ class Contact extends Component {
 
   createFeedback (data) {
     const endpoint = '/api/extra/contactus/create/'
-    const csrfToken = cookie.load('csrftoken')
+    // const csrfToken = cookie.load('csrftoken')
     let thisComp = this
-    if (csrfToken !== undefined) {
-      let lookupOptions = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CSRFToken': csrfToken
-        },
-        body: JSON.stringify(data),
-        credentials: 'include'
+    // if (csrfToken !== undefined) {
+    let lookupOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
 
-      }
-      fetch(endpoint, lookupOptions)
-        .then(function (response) {
-          return response.json()
-        }).then(function (responseData) {
-          thisComp.setState({
-            name: '',
-            email: '',
-            feedback: '',
-            doneloading: false
-          })
-          alert('Thank you for your feedback.')
-        }).catch(function (error) {
-          thisComp.setState({
-            doneloading: false
-          })
-          alert('Try Again Error Happend')
-        })
+      },
+      body: JSON.stringify(data),
+      credentials: 'include'
+
     }
+    fetch(endpoint, lookupOptions)
+      .then(function (response) {
+        return response.json()
+      }).then(function (responseData) {
+        thisComp.setState({
+          name: '',
+          email: '',
+          feedback: '',
+          doneloading: false
+        })
+        alert('Thank you for your feedback.')
+      }).catch(function (error) {
+        thisComp.setState({
+          doneloading: false
+        })
+        alert('Try Again Error Happend')
+      })
+    // }
   }
 
   handleSubmit (event) {
@@ -169,3 +169,5 @@ class Contact extends Component {
 }
 
 export default Contact
+
+// 'X-CSRFToken': csrfToken
