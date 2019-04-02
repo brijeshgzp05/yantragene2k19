@@ -112,7 +112,7 @@ class Contact extends Component {
             </div>
             <div className='col-md-5 col-lg-5 col-sm-11 offset-lg-1 offset-md-1 offset-sm-1 contactus'>
               <h1 className='awesome'>Contact us</h1>
-              <p><strong>Email : </strong><a href='mailto:info@fgiet.ac.in'>info@fgiet.ac.in</a></p>
+              <p><strong>Email : </strong><a href='mailto:yantragene2k19@gmail.com'>yantragene2k19@gmail.com</a></p>
               <p><strong>Contact : </strong>0535-2211269, 0535-2211430</p>
               <p><strong>Website : </strong><a href='#' onClick={() => this.gotosite('http://fgiet.ac.in/')}>fgiet.ac.in</a></p>
               <h3 style={{ 'color': '#F0ECF7' }}>Your feedback : </h3>

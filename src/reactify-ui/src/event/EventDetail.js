@@ -200,8 +200,8 @@ class EventRegistrationForm extends React.Component {
                         </div>
 
                       </div>
-
-                      <Link to='/events' class='my_event_btn'>Events</Link>
+                      <br />
+                      <Link to='/events' className='my_event_btn'><span id='spanBack'>&#8592;Back to Events</span></Link>
 
                     </div>
 
@@ -214,16 +214,16 @@ class EventRegistrationForm extends React.Component {
                 <div className={`event_content_div ${this.state.active === '1' ? 'box11' : 'box-hide'}`}>
                   <div className='mainContent'>
                     <center><h3 className='Btn_name'>Introduction</h3></center><hr />
-                    <p>{event.eintro}</p>
+                    <p className='intro_rule_div'>{event.eintro}</p>
                   </div>
                 </div>
 
                 <div className={`event_content_div ${this.state.active === '2' ? 'box11' : 'box-hide'}`}>
                   <div className='mainContent'>
                     <center><h3 className='Btn_name'>Rules</h3></center><hr />
-                    <p>{event.econtent} {event.id === 1 ? <a href='#' onClick={() => this.gotosite('http://codechef.com/AGOQ2019')}>Codechef link</a> : ''}</p></div></div>
+                    <p>{event.econtent} {event.slug === 'algosense' ? <a href='#' onClick={() => this.gotosite('http://codechef.com/AGOQ2019')}>Codechef link</a> : ''}</p></div></div>
 
-                <div className={`event_content_div  ${this.state.active === '3' ? 'box11' : 'box-hide'}`}>
+                <div className={`event_content_div  ${this.state.active === '3' ? 'box123' : 'box-hide'}`}>
                   <div className='mainContent'>
                     <center><h3 className='Btn_name'>Co-ordinaters</h3></center><hr />
 
@@ -295,7 +295,7 @@ class EventRegistrationForm extends React.Component {
                         </div>
                       </form>
                       : <div>
-                        <h1>You are not logged in</h1>
+                        <h1 id='auth_process'>You are not logged in !</h1>
                         <Link to='/login' />
                       </div>
                     }

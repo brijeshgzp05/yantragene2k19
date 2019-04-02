@@ -9,7 +9,7 @@
 	width:600px;
 	height:100;
 	color:#F0ECF7;
-	background-color: rgba(206,198,222,0.3); 
+	background-color:rgba(42,79,90,0.3); 
 	border-radius:3px;
 }
 .signup_form_title, .login_form_title{
@@ -32,6 +32,6 @@
 	width:600px;
 	height:400px;
 	color:#F0ECF7;
-	background-color: rgba(206,198,222,0.3); 
+	background-color: rgba(42,79,90,0.3); 
 	border-radius:3px;
 }

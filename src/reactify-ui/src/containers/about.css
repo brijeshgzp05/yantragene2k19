@@ -11,6 +11,11 @@
 }
 .heading{
   font-weight: bold;
+  font-size: 20px;
+}
+
+.contentabout{
+	font-size: 18px;
 }
 .icon-position{
   position: relative;

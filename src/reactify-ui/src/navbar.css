@@ -7,6 +7,11 @@ nav {
     transition: top .5s ease-in-out;
 }
 
+.nav6{
+  font-weight: bold;
+  font-size: 18;
+}
+
 nav ul {
     height: 100%;
     display: flex;
@@ -26,7 +31,7 @@ nav ul li a {
     font-family: 'Axis';
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color:black;
     text-decoration: none;
 }
 
@@ -62,7 +67,7 @@ nav ul li a:hover hr, nav ul li a hr:hover {
 nav ul li a .burger div {
     height: 5px;
     width: 30px;
-    background: black;
+    background:white;
     border-radius: 5px;
     margin-bottom: 5px;
     transition: .5s;
@@ -211,7 +216,8 @@ main hr {
 .dropbtn {
   background-color:rgba(0, 0 ,0 ,0.1); 
   padding: 16px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 
 }
 
@@ -226,8 +232,10 @@ main hr {
   position: absolute;
   min-width: 130px;
   background:white;
-  opacity:0.4;
+  opacity:0.7;
   z-index: 1;
+  margin-left: -70px;
+  color:white;
 }
 
 .dropdown-content a {
@@ -256,7 +264,7 @@ margin-left:0%;
 }
 nav
 {
-  margin-top:-15%;
+  margin-top:-10%;
 }
 }
 .my_nav_link{
@@ -265,4 +273,6 @@ nav
 .my_nav_link:hover{
   color:white;
 }
-
+.drop_link{
+  color:white;
+}

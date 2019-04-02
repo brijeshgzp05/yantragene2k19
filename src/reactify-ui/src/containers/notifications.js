@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './notifications.css'
 
 class Notification extends Component {
+  gotosite (url_string) {
+    const win = window.open(url_string, '_blank')
+    win.focus()
+  }
   render () {
     const { value } = this.props
     return (
@@ -11,7 +15,8 @@ class Notification extends Component {
             <p>{value}</p>
             <ul>
               <li>
-                <a href='#'>Registrations started from 1st of April.</a>
+                <a href='#' onClick={() => this.gotosite('https://res.cloudinary.com/dflquw48f/image/upload/v1553007007/Rule_Book_-_Yantragene_2019.pdf')}>Rule book.</a>
+
               </li>
               <li>
                 <a href='#'>No accomodations and mess charges for outsiders.</a>

@@ -217,14 +217,14 @@ label { margin-right: 10px; }
 
   perspective: 800px;
   margin-top: 15%;
-  margin-left:4%;
+  margin-left:2%;
 
 }
 
 
 .div_space1 {
   perspective: 800px;
-  margin-left:45%;
+  margin-left:55%;
   margin-top: 15%;
 
 }
@@ -232,7 +232,7 @@ label { margin-right: 10px; }
 .event__face {
 
   width: 340px;
-  margin-top: 5.6%;
+  margin-top: 5%;
    padding:10px;
   border-radius: 5px;
   font-size: 40px;
@@ -245,7 +245,7 @@ label { margin-right: 10px; }
 
   width: 340px;
   padding:10px;
-  margin-top: 9.5%;
+  margin-top: 10%;
   border-radius: 5px;
   font-size: 40px;
   color: white;
@@ -257,7 +257,7 @@ label { margin-right: 10px; }
 width: 50%;
 position: fixed;
 left: 50%;
-margin-left: -23%;
+margin-left: -24%;
 }
 
 
@@ -266,7 +266,7 @@ margin-left: -23%;
 .active,.floater:hover{-webkit-transform:scaleY(1);transform:scaleY(1);transition:.6s;color:#f8f8ff;background:linear-gradient(to right,#207ce5,0,#6cb1f1 100%);}
 
 @media only screen and (max-width: 800px){
-  #cubeid{
+  #try{
     display: none;
   }
   .event-front{
@@ -276,12 +276,12 @@ margin-left: -23%;
     transform: translateZ(0px) rotateY( 0deg);
   }
   .div_space1{
-    margin-left:2%;
+    margin-left:5%;
       margin-top: 0%;
   }
   .div_space{
      margin-left:1.7%;
-       margin-top: 0%;
+       margin-top: 26%;
   }
   .event__face {
     width: 80vh;

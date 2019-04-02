@@ -65,12 +65,11 @@ class Event extends Component {
 
   componentDidMount () {
     var cube = document.querySelector('.cube')
-    console.log(cube)
     var elemDiv = document.querySelector('.div_space')
     this.checkstate(cube)
 
-    var showClass = 'show-' + 'front'
-    var showClass1 = 'show-' + 'front' + '1'
+    var showClass = 'show-' + 'left'
+    var showClass1 = 'show-' + 'left' + '1'
     cube.classList.add(showClass)
     cube.classList.add(showClass)
     this.checkClass(showClass)
@@ -85,14 +84,14 @@ class Event extends Component {
           <div className='col'>
             <div className='container'>
               <div className='div_space'>
-                <div className={` floater  event__face event-front front f1 ${this.state.active === 'f1' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=algosense' className='elinks'>ALGOSENSE</Link></div>
-                <div className={`floater event__face event-front back f2 ${this.state.active === 'f2' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=appmania' className='elinks'>APP MANIA</Link></div>
-                <div className={`floater event__face event-front right f3 ${this.state.active === 'f3' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=digicanva' className='elinks'>DIGI CANVA</Link></div>
+                <div className={` floater  event__face event-front left f1 ${this.state.active === 'f1' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=algosense' className='elinks'>ALGOSENSE</Link></div>
+                <div className={`floater event__face event-front right f5 ${this.state.active === 'f5' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=zumowar' className='elinks'>ZUMO WAR</Link></div>
+                <div className={`floater event__face event-front back f2 ${this.state.active === 'f2' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=techyshot' className='elinks'>TECHY SHOT</Link></div>
                 <div className={`floater event__face event-front left f4 ${this.state.active === 'f4' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=webbit' className='elinks'>WEBBIT</Link></div>
-                <div className={`floater event__face event-front top f5 ${this.state.active === 'f5' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=zumowar' className='elinks'>ZUMO WAR</Link></div>
-                <div className={`floater event__face event-front bottom f6 ${this.state.active === 'f6' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=robosoccer' className='elinks'>ROBO SOCCER</Link></div>
+                <div className={`floater event__face event-front right f6 ${this.state.active === 'f6' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=robosoccer' className='elinks'>ROBO SOCCER</Link></div>
+                <div className={`floater event__face event-front top f3 ${this.state.active === 'f3' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=airfray' className='elinks'>AIR FRAY</Link></div>
+                <div className={`floater event__face event-front back f15 ${this.state.active === 'f15' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=contraption' className='elinks'>CONTRAPTION</Link></div>
                 <div className={`floater event__face event-front right f7 ${this.state.active === 'f7' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=roborace' className='elinks'>ROBO RACE</Link></div>
-                <div className={`floater event__face event-front top f15 ${this.state.active === 'f15' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=ballonfight' className='elinks'>BALLOON FIGHT</Link></div>
 
               </div>
             </div>
@@ -103,12 +102,12 @@ class Event extends Component {
               <div className='scene'>
                 <div className='cube' id='cubeid'>
 
-                  <div className='cube__face  cube__face--front'><img src={require('./Mixed Bowl.jpg')} className='img1' /></div>
-                  <div className='cube__face cube__face--back'><img src={require('./hover.jpg')} className='img1' /></div>
+                  <div className='cube__face  cube__face--front'><img src={require('./pubg.jpg')} className='img1' /></div>
+                  <div className='cube__face cube__face--back'><img src={require('./mechanical.jpeg')} className='img1' /></div>
                   <div className='cube__face cube__face--right'><img src={require('./Robogames.jpg')} className='img1' /></div>
                   <div className='cube__face cube__face--left'><img src={require('./Software Corner.jpg')} className='img1' /></div>
                   <div className='cube__face cube__face--top'><img src={require('./Take Off.jpg')} className='img1' /></div>
-                  <div className='cube__face cube__face--bottom'><img src={require('./Technovation.jpg')} className='img1' /></div>
+                  <div className='cube__face cube__face--bottom'><img src={require('./embg.jpg')} className='img1' /></div>
 
                   <div className='cube__face1 cube__face--front1' />
                   <div className='cube__face1 cube__face--back1' />
@@ -126,14 +125,17 @@ class Event extends Component {
             <div className='row'>
               <div className='container'>
                 <div className='div_space1'>
+
                   <div className={`floater  event__face1 event-front1 front f8 ${this.state.active === 'f8' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=pubgmobile' className='elinks'>PUBG MOBILE</Link></div>
-                  <div className={`floater event__face1 event-front1 back f9 ${this.state.active === 'f9' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=techyshot' className='elinks'>TECHY SHOT</Link></div>
-                  <div className={`floater event__face1 event-front1 right f10 ${this.state.active === 'f10' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=contraption' className='elinks'>CONTRAPTION</Link></div>
-                  <div className={`floater event__face1 event-front1 left f11 ${this.state.active === 'f11' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=bridgeit' className='elinks'>BRIDGE-IT</Link></div>
-                  <div className={`floater event__face1 event-front1 top f12 ${this.state.active === 'f12' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=airfray' className='elinks'>AIR FRAY</Link></div>
-                  <div className={`floater event__face1 event-front1 bottom f13 ${this.state.active === 'f13' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=skyrc' className='elinks'>SKY RC</Link></div>
-                  <div className={`floater event__face1 event-front1 right f14 ${this.state.active === 'f14' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=hovermania' className='elinks'>HOVER MANIA</Link></div>
-                  <div className={`floater event__face event-front1 front f16 ${this.state.active === 'f16' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=embeddedexpo' className='elinks'>EMBEDDED EXPO</Link></div>
+                  <div className={`floater event__face1 event-front1 top f13 ${this.state.active === 'f13' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=skyrc' className='elinks'>SKY RC</Link></div>
+                  <div className={`floater event__face1 event-front1 left f9 ${this.state.active === 'f9' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=appmania' className='elinks'>APP MANIA</Link></div>
+                  <div className={`floater event__face1 event-front1 right f10 ${this.state.active === 'f10' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=ballonfight' className='elinks'>BALLOON FIGHT</Link></div>
+                  <div className={`floater event__face1 event-front1 back f11 ${this.state.active === 'f11' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=bridgeit' className='elinks'>BRIDGE-IT</Link></div>
+                  <div className={`floater event__face1 event-front1 left f12 ${this.state.active === 'f12' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=digicanva' className='elinks'>DIGI CANVA</Link></div>
+
+                  <div className={`floater event__face1 event-front1 top f14 ${this.state.active === 'f14' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=hovermania' className='elinks'>HOVER MANIA</Link></div>
+                  <div className={`floater event__face event-front1 bottom f16 ${this.state.active === 'f16' ? 'active' : ''}`} onMouseOver={this.changeContent}><Link to='/events/event=embeddedexpo' className='elinks'>EMBEDDED EXPO</Link></div>
+
                 </div>
               </div>
             </div>

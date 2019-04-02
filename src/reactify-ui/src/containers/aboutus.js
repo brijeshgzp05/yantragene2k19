@@ -12,7 +12,7 @@ class Aboutus extends Component {
           <h1 style={{ 'color': 'white' }}>Yantragene</h1>
 
         </div>
-        <div className='center-content'>
+        <div className='center-content contentabout'>
           <hr />
           <p>
              The Technical Fest plays an important role in the college curriculum.” Yantragene” is the two-day technical fest organized in F.G.I.E.T. and the 4th edition of this annual inter-college fest is going to be held on April 11 to April 12,2019. This event was first organized in 2016 with a motto to give a platform to the young brains to show their skills and compete with others to find the best. To motivate the spirit of participants, cash prizes, certificates along with various other exciting prizes are awarded the winners as well as to cheer up the others there are certification for participation too. It is not just about the competitions but also an event where a lot of those new ideas are seen live and learn more and be inspired. This inspiring event that happens every year in college guides the students to dream bigger and make those dreams come true.

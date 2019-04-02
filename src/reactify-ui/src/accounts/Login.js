@@ -79,7 +79,11 @@ class NormalLoginForm extends Component {
               </center>
             </Form.Item>
 
-
+            <h3 className="forgot_password">
+              <a href="#" data-toggle="tooltip" title="Contact at - yantragene2k19@gmail.com">
+                Forgot password!
+              </a>
+            </h3>
           </Form>
           </div>
       }

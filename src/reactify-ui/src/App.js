@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   componentDidMount () {
-    setTimeout(this.clearLoader, 1000)
+    setTimeout(this.clearLoader, 8000)
   }
 
   render () {
@@ -47,7 +47,6 @@ class App extends Component {
             </div>
           </div>
           : ''}
-
         <BrowserRouter>
           <Switch>
 

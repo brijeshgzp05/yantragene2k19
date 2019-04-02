@@ -42,8 +42,8 @@ class StartMenu extends Component {
         <nav className={`${this.state.active === true ? 'complete' : ''}`}>
           <ul>
 
-            <h1 className='tecfest_name'><li className={`nav1 face  ${this.state.shake === 'nav1' ? 'face' : ''}`} onMouseOver={this.getshake}>
-              <Link to='/'><img src={require('./yantragenelogo.png')} /></Link>
+            <h1 className='tecfest_name'><li className={`nav1 face  `} >
+              <Link to='/'><img src={require('./yantragenelogo2.png')} /></Link>
             </li></h1>
             <li className={`nav5 navbarcontent face nav_t ${this.state.shake === 'nav5' ? 'face' : ''}`} onMouseOver={this.getshake}>
               <Link to='/' className='my_nav_link'>Home</Link>
@@ -60,8 +60,8 @@ class StartMenu extends Component {
               ? <div class='dropdown'>
                 <li className={`nav6 face ${this.state.shake === 'nav6' ? 'face' : ''}`} onMouseOver={this.getshake}>Welcome</li>
                 <div class='dropdown-content'>
-                  <a href='#'><Link to='/profile' className='my_nav_link'>Profile</Link></a>
-                  <a href='#'><Link to='#' onClick={this.props.logout} className='my_nav_link'>Logout</Link></a>
+                  <a href='#'><Link to='/profile' className='drop_link'>Profile</Link></a>
+                  <a href='#'><Link to='#' onClick={this.props.logout} className='drop_link'>Logout</Link></a>
                 </div>
               </div>
               : <li className={`nav5 face ${this.state.shake === 'nav5' ? 'face' : ''}`} onMouseOver={this.getshake}><Link to='/login' className='my_nav_link'>Login</Link></li>
