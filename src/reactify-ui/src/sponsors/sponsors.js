@@ -78,6 +78,13 @@ class Sponsors extends Component {
                   </figure>
                 </a>
               </div>
+              <div className='col-md-4 col-xs-12 col-centered'>
+                <a href='#'>
+                  <figure>
+                    <img src={require('./qclub&cafe.png')} className='spl' />
+                  </figure>
+                </a>
+              </div>
             </div>
             <hr className='chr' />
             <center><h3>Styling Partner</h3></center>

@@ -44,6 +44,38 @@ class Coordinator extends Component {
                 </div>
               </figure>
             </div>
+            <div className='col-md-4 col-xs-12 col-centered'>
+              <figure>
+                <div className='card-container'>
+                  <div className='card11'>
+                    <div class='front face123'>
+                      <img className='cimg' src={require('./ashutosh.jpg')} />
+                    </div>
+                    <div class='back123 face123'>
+                      <h3>Ashutosh Mishra</h3>
+                      <p class='contact'>+91-8400600272</p>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-md-4 col-xs-12 col-centered'>
+              <figure>
+                <div className='card-container'>
+                  <div className='card11'>
+                    <div class='front face123'>
+                      <img className='cimg' src={require('./navneet.jpg')} />
+                    </div>
+                    <div class='back123 face123'>
+                      <h3>Navneet Kumar</h3>
+                      <p class='contact'>+91-9695999490</p>
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </div>
           </div>
           <hr className='chr accessory' />
           <center><h2 className='headings'>Web Team</h2></center>
