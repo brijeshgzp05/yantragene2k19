@@ -31,8 +31,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'yantragene2k19@gmail.com'
-EMAIL_HOST_PASSWORD = 'yantragene2019@'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 
 
